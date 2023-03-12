@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* container */
+.container {
+  padding: 0px 15px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.sign-in {
+  background-image: url(backgroudSignIn.jpeg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.sign-in::before {
+  content: "";
+  background-color: rgb(0 0 0 / 40%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.sign-in .box {
+  text-align: center;
+  background-color: rgba(241, 234, 247, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 30px;
+  min-width: 500px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.sign-in .box h2 {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.sign-in .box form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.sign-in .box form label {
+  padding-left: 10px;
+  color: #333;
+  margin: 10px 0;
+}
+.sign-in .box form input {
+  border: none;
+  /* border-bottom: 1px solid #333; */
+  background-color: transparent;
+  padding: 15px 40px;
+  box-shadow: 0px 10px 31px -17px rebeccapurple;
+}
+.sign-in .box form input:focus {
+  outline: none;
+}
+.sign-in .box form .radio-Gender {
+  margin-bottom: 10px;
+}
+.sign-in .box form .radio-Gender label {
+  margin-right: 20px;
+}
+.sign-in .box form .submit {
+  box-shadow: none;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 30px auto 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
