@@ -83,7 +83,6 @@ ul {
 }
 .sign-in .box form input {
   border: none;
-  /* border-bottom: 1px solid #333; */
   background-color: transparent;
   padding: 15px 40px;
   box-shadow: 0px 10px 31px -17px rebeccapurple;
@@ -111,4 +110,10 @@ ul {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .sign-in .box {
+    min-width: 300px;
+    max-width: 100%;
+  }
 }
